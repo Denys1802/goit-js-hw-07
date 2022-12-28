@@ -8,8 +8,6 @@ const createGallery = createGalleryItemsMurkup(galleryItems);
 
 galleryContainerEl.innerHTML = createGallery;
 
-//galleryContainerEl.addEventListener('click', onClickContainerGallery)
-
 function createGalleryItemsMurkup(array) {
   return array
     .map(({ preview, original, description }) => {
@@ -23,10 +21,3 @@ function createGalleryItemsMurkup(array) {
 }
 
 new SimpleLightbox(".gallery a", { captionsData: "alt", captionDelay: 250 });
-
-// function onClickContainerGallery(evt) {
-// 	evt.preventDefault();
-// 	let lightbox = new SimpleLightbox('.gallery a');
-
-// lightbox.open();
-// }
